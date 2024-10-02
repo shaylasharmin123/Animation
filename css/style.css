@@ -1,0 +1,65 @@
+.box{
+	margin: 10px 0 0 10px;
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	-webkit-animation-name: test;
+	-webkit-animation-duration: 5s;
+	animation-name: test;
+	animation-duration: 5s;
+}
+
+/*@-webkit-keyframes test{
+	from{background-color: red;}
+	to{background-color: green;}
+}*/
+@keyframes test{
+	from{background-color: red;}
+	to{background-color: green;}
+}
+.box2{
+	margin: 10px 0 0 10px;
+	width: 150px;
+	height: 150px;
+	background-color: yellow;
+	-webkit-animation-name: test2;
+	-webkit-animation-duration: 5s;
+	animation-name: test2;
+	animation-duration: 5s;
+}
+
+/*@-webkit-keyframes test2{
+	0%{background-color: yellow;}
+	25%{background-color: blue;}
+	50%{background-color: aqua;}
+	75%{background-color: lime;}
+	100%{background-color: silver;}
+}*/
+@keyframes test2{
+	0%{background-color: yellow;}
+	25%{background-color: blue;}
+	50%{background-color: aqua;}
+	75%{background-color: lime;}
+	100%{background-color: red;}
+}
+.box3{
+	margin: 10px 0 0 10px;
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	-webkit-animation-name: test;
+	-webkit-animation-duration: 5s;
+	position: relative;
+	animation-name: test3;
+	animation-duration: 5s;
+	animation-direction: reverse;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes test3{
+	0%{background-color: yellow; left:0px; top: 0px}
+	25%{background-color: blue; left:300px; top: 0px}
+	50%{background-color: aqua; left:300px; top: 300px}
+	75%{background-color: lime; left:0px; top: 300px}
+	100%{background-color: silver; left:0px; top: 0px}
+}
